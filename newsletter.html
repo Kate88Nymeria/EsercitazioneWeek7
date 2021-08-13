@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Newsletter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="/javascript/libri.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row header_stripe">
+            <header>
+                <div class="col-3 text-center">
+                    <a href="index.html"><img class="img_logo" src="images/logo.png " /></a>
+                </div>
+                <nav>
+                    <div class="col-7 navbar text-center">
+                        <ul>
+                            <li class="collegamento"><a class="nav-item" href="index.html ">Home</a></li>
+                            <li class="collegamento"><a class="nav-item" href="ordine.html ">Ordina</a></li>
+                            <li class="collegamento"><a class="nav-item corrente" href="newsletter.html ">Newsletter</a></li>
+                            <li class="collegamento"><a class="nav-item" href="about.html ">About Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+        <div class="row">
+            <main>
+                <div class="col-12 fondo_immagine">
+                    <div class="fondo col-8">
+                        <form action="prenotazioni.html" method="POST">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label class="form-label" for="nome">Nome</label>
+                                        </td>
+                                        <td>
+                                            <input class="form-control" type="text" name="nome" id="nome" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="form-label" for="cognome">Cognome</label>
+                                        </td>
+                                        <td>
+                                            <input class="form-control" type="text" name="cognome" id="cognome" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="form-label" for="mail">Indirizzo eMail</label>
+                                        </td>
+                                        <td>
+                                            <input class="form-control" type="email" name="mail" id="mail" placeholder="mariorossi@mail.com" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="form-label" for="frequenza">Frequenza News</label>
+                                        </td>
+                                        <td>
+                                            <input class="radiob" type="radio" name="frequenza" id="frequenza" value="giornaliera" />Giornaliera
+                                            <input class="radiob" type="radio" name="frequenza" id="frequenza" value="settimanale" />Settimanale
+                                            <input class="radiob" type="radio" name="frequenza" id="frequenza" value="mensile" />Mensile
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td class="text-center">
+                                            <div class="btn btn-success" id="newsletter" onclick="javascript:confermaIscrizione()">Conferma</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <div class="col-12">
+            <footer class=" text-center"><span>&copy; 2021 <i>Kate</i><address>kate@mail.com</address></span></footer>
+        </div>
+</body>
+
+</html>

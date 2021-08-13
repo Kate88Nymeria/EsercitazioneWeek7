@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ordina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="/javascript/libri.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row header_stripe">
+            <header>
+                <div class="col-3 text-center">
+                    <a href="index.html"><img class="img_logo" src="images/logo.png " /></a>
+                </div>
+                <nav>
+                    <div class="col-7 navbar text-center">
+                        <ul>
+                            <li class="collegamento"><a class="nav-item" href="index.html ">Home</a></li>
+                            <li class="collegamento"><a class="nav-item corrente" href="ordine.html ">Ordina</a></li>
+                            <li class="collegamento"><a class="nav-item" href="newsletter.html ">Newsletter</a></li>
+                            <li class="collegamento"><a class="nav-item" href="about.html ">About Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+        <div class="row">
+            <main>
+                <div class="col-12">
+                    <div class="fondo3">
+                        <h1 class="libri_disp">Libri Disponibili</h1>
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Genere</th>
+                                    <th scope="col">Titolo</th>
+                                    <th scope="col">Anno di Uscita</th>
+                                    <th scope="col">Autore</th>
+                                    <th scope="col">Editore</th>
+                                    <th scope="col">Scegli</th>
+                                    <th scope="col">Quantità</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Fantasy</th>
+                                    <td>Il Signore degli Anelli</td>
+                                    <td>1955</td>
+                                    <td>J.R.R. Tolkien</td>
+                                    <td>Bompiani</td>
+                                    <td><input type="checkbox" name="signore" id="scelta" value="21.80" /></td>
+                                    <td><input class="number" type="number" name="signoreN" id="numero" size="2" placeholder="----" min="0" /></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Fantasy</th>
+                                    <td>Il Grande Inverno</td>
+                                    <td>2000</td>
+                                    <td>George R.R. Martin</td>
+                                    <td>Urania</td>
+                                    <td><input type="checkbox" name="grande" id="scelta" value="15.80" /></td>
+                                    <td><input class="number" type="number" name="grandeN" id="numero" size="2" placeholder="----" min="0" /></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Fantasy</th>
+                                    <td>Gli Occhi del Drago</td>
+                                    <td>1984</td>
+                                    <td>Stephen King</td>
+                                    <td>Sperling & Kupfer</td>
+                                    <td><input type="checkbox" name="occhi" id="scelta" value="9.20" /></td>
+                                    <td><input class="number" type="number" name="occhiN" id="numero" size="2" placeholder="----" min="0" /></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Biografia</th>
+                                    <td>Un Uomo</td>
+                                    <td>1979</td>
+                                    <td>Oriana Fallaci</td>
+                                    <td>Bur</td>
+                                    <td><input type="checkbox" name="uomo" id="scelta" value="11.30" /></td>
+                                    <td><input class="number" type="number" name="uomoN" id="numero" size="2" placeholder="----" min="0" /></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Biografia</th>
+                                    <td>La Fine è il mio Inizio</td>
+                                    <td>2006</td>
+                                    <td>Tiziano Terzani</td>
+                                    <td>Longanesi & C.</td>
+                                    <td><input type="checkbox" name="fine" id="scelta" value="17.20" /></td>
+                                    <td><input class="number" type="number" name="fineN" id="numero" size="2" placeholder="----" min="0" /></td>
+                                </tr>
+                                <td>&nbsp;</td>
+                                <td class="pt-3 px-2">
+                                    <div class="btn btn-success ordina" onclick="javascript:totaleOrdine()">Ordina</div>
+                                </td>
+                                <td class="pt-4 px-5">
+                                    <div><span class="listaLibri" id="listaLibri"><b>Totale: </b></span></div>
+                                </td>
+                                <td>
+
+                                </td>
+                            </tbody>
+                        </table>
+                    </div>
+            </main>
+            </div>
+
+            <div class="col-12">
+                <footer class=" text-center"><span>&copy; 2021 <i>Kate</i><address>kate@mail.com</address></span></footer>
+            </div>
+</body>
+
+</html>
